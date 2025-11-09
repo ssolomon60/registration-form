@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Youth camp registration form">
+    <meta name="author" content="Your Name">
+    <title>Camp Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <main>
+        <h1>Camp Registration Form</h1>
+        <form id="registrationForm">
+            <fieldset>
+                <legend>Adult Information</legend>
+                <label for="adultName">Name:</label>
+                <input type="text" id="adultName" required>
+            </fieldset>
+
+            <fieldset id="participantsFieldset">
+                <legend>Participants</legend>
+                <section class="participant" id="participant1">
+                    <h3>Participant 1</h3>
+                    <label for="pName1">Name:</label>
+                    <input type="text" id="pName1" required>
+                    <label for="pAge1">Age:</label>
+                    <input type="number" id="pAge1" required>
+                    <label for="fee1">Fee:</label>
+                    <input type="number" id="fee1" required>
+                </section>
+                <button type="button" id="addParticipant">Add Participant</button>
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+
+        <section id="summary" style="display:none;"></section>
+    </main>
+
+    <script src="register.js"></script>
+</body>
+</html>
